@@ -1,0 +1,413 @@
+/* Reset & base */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    background-color: #f9fafb;
+    color: #1f2937;
+    line-height: 1.5;
+    padding: 1rem;
+}
+
+header {
+    background: linear-gradient(135deg, #283eaa, #67b26f);
+    color: white;
+    padding: 1.5rem 2rem;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.15);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header-logo {
+    font-size: 2.8rem;
+    color: #fefefe;
+    filter: drop-shadow(0 0 2px rgba(0,0,0,0.5));
+    user-select: none;
+}
+
+.header-text h1 {
+    font-weight: 900;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    user-select: none;
+    margin: 0;
+    font-size: 2.2rem;
+    letter-spacing: 0.06em;
+    line-height: 1.1;
+}
+
+.subheading {
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #d1d5dbdd; /* Light gray */
+    letter-spacing: 0.08em;
+    margin-top: 0.1rem;
+}
+
+
+nav ul {
+    list-style: none;
+    margin: 1rem 0 0 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    font-weight: 600;
+}
+
+nav a {
+    color: #d7f0d3;
+    text-decoration: none;
+    padding: 0.3rem 0.5rem;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover,
+nav a.active {
+    background-color: rgba(255, 255, 255, 0.25);
+    color: #fff;
+}
+
+
+/*nav ul {*/
+/*    list-style: none;*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    gap: 2rem;*/
+/*}*/
+
+/*nav li a {*/
+/*    color: #9ca3af;*/
+/*    text-decoration: none;*/
+/*    font-weight: 600;*/
+/*    padding-bottom: 4px;*/
+/*    border-bottom: 3px solid transparent;*/
+/*    transition: border-color 0.3s, color 0.3s;*/
+/*}*/
+
+/*nav li a:hover,*/
+/*nav li a.active {*/
+/*    color: #3b82f6;*/
+/*    border-color: #3b82f6;*/
+/*}*/
+
+section {
+    max-width: 1200px; /* was 800px */
+    margin: 1.5rem auto;
+    padding: 2rem;
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: 0 4px 20px rgb(0 0 0 / 0.05);
+    scroll-margin-top: 120px; /* Adjust to match your header height */
+}
+
+h1, h2, h3 {
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #111827;
+}
+
+/* Modules with icons and toggling */
+.module-item {
+    margin-bottom: 1rem;
+}
+
+.module-header {
+    font-size: 1.25rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    color: #2563eb;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 0.4rem;
+    transition: border-color 0.3s;
+    user-select: none;
+}
+
+.module-header:hover {
+    border-color: #2563eb;
+}
+
+.module-header i {
+    font-size: 1.3rem;
+    color: #3b82f6;
+    min-width: 24px;
+    text-align: center;
+}
+
+.module-content {
+    margin-top: 0.5rem;
+    padding-left: 2.8rem;
+    color: #4b5563;
+    font-size: 1rem;
+}
+
+.collapsed {
+    display: none;
+}
+
+/* Teacher section modern */
+#teachers {
+    max-width: 1200px;
+    margin: 2rem auto;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgb(0 0 0 / 0.05);
+}
+
+.teacher-headers-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #e5e7eb;
+}
+
+.teacher-collapsible {
+    flex: 1 1 20%;
+    min-width: 0;
+}
+
+.teacher-header {
+    background: #2563eb;
+    color: #fff;
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    font-weight: 600;
+    text-align: center;
+    white-space: nowrap;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.3rem;
+    box-shadow: 0 4px 10px rgb(37 99 235 / 0.3);
+    transition: background 0.3s ease;
+    user-select: none;
+    font-family: 'Inter', sans-serif;
+}
+
+.teacher-header:hover {
+    background: #1e40af;
+}
+
+.teacher-header::after {
+    content: "▼";
+    font-size: 0.75rem;
+    transition: transform 0.3s ease;
+}
+
+.teacher-header.expanded::after {
+    transform: rotate(180deg);
+}
+
+.teacher-content {
+    background: #f3f4f6;
+    padding: 1rem 1.2rem;
+    border-radius: 0 0 12px 12px;
+    margin-top: 0.25rem;
+    box-shadow: 0 2px 8px rgb(0 0 0 / 0.1);
+}
+
+.teacher-photo {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 0.5rem;
+    border: 3px solid #2563eb;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.teacher-content p {
+    color: #374151;
+    font-weight: 500;
+    text-align: center;
+}
+
+.schedule-table {
+    width: 100%;
+    max-width: 700px;
+    margin: 2rem auto;
+    border-collapse: collapse;
+    font-family: 'Inter', sans-serif;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.schedule-table thead tr {
+    background: #2563eb;
+    color: #fff;
+    text-align: left;
+}
+
+.schedule-table th,
+.schedule-table td {
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.schedule-table tbody tr:hover {
+    background: #f0f9ff;
+}
+
+.schedule-table tbody tr.lab-session td {
+    background: #e0e7ff;
+    font-weight: 600;
+    color: #4338ca;
+    text-align: left;
+}
+
+.schedule-table tbody tr.lab-session td:first-child {
+    text-align: left;
+    font-weight: bold;
+}
+
+/* Alternating background colors for week rows */
+.schedule-table tbody tr.week-1,
+.schedule-table tbody tr.week-3,
+.schedule-table tbody tr.week-5 {
+    background-color: #e0e7ff; /* light blue */
+}
+
+.schedule-table tbody tr.week-2,
+.schedule-table tbody tr.week-4,
+.schedule-table tbody tr.week-6 {
+    background-color: #ffffff; /* white */
+}
+
+/* Hover effect for all rows */
+.schedule-table tbody tr:hover {
+    background-color: #c3dafe; /* highlight on hover */
+}
+
+
+/* Reuse your existing .schedule-table styles for consistency */
+/* For reference, here is a minimal snippet - extend as needed */
+
+.schedule-table {
+    width: 100%;
+    max-width: 900px;
+    margin: 2rem auto;
+    border-collapse: collapse;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+    border-radius: 12px;
+    overflow: hidden;
+    font-family: 'Inter', sans-serif;
+}
+
+.schedule-table thead tr {
+    background: #2563eb;
+    color: white;
+    text-align: left;
+}
+
+.schedule-table th,
+.schedule-table td {
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.schedule-table tbody tr:hover {
+    background: #f0f9ff;
+}
+
+.schedule-table a {
+    color: #2563eb;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.schedule-table a:hover {
+    text-decoration: underline;
+}
+
+/* Add a top border to every row where week changes */
+.schedule-table tbody tr.week-separator {
+    border-top: 3px solid #2563eb;
+    background-color: #f0f7ff;
+}
+
+/* Optional: make the week number column bold for clarity */
+.schedule-table td:first-child {
+    font-weight: 700;
+    color: #1e40af;
+    padding-left: 1.5rem;
+}
+
+.resources-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.resource-card {
+    display: flex;
+    align-items: center;
+    width: 320px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+    padding: 1rem 1.5rem;
+    text-decoration: none;
+    color: inherit;
+    transition: box-shadow 0.3s ease;
+}
+
+.resource-card:hover {
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.resource-card i {
+    font-size: 2.5rem;
+    color: #2563eb;
+    margin-right: 1rem;
+}
+
+.resource-card h3 {
+    margin: 0;
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: #1e40af;
+}
+
+.resource-card p {
+    margin: 0.2rem 0 0 0;
+    font-size: 0.9rem;
+    color: #4b5563;
+}
+
+
+/* Footer */
+footer {
+    background: #111827;
+    color: #9ca3af;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 3rem;
+    font-size: 0.9rem;
+    border-radius: 0 0 12px 12px;
+}

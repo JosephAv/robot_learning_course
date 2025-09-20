@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Robot Learning Course</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+
+<body>
+<header>
+  <div class="header-container">
+    <div class="header-logo">
+      <i class="fa-solid fa-robot"></i>
+    </div>
+    <div class="header-text">
+      <h1>Robot Learning Course</h1>
+      <p class="subheading">Politecnico di Torino</p>
+    </div>
+  </div>
+  <nav>
+    <ul>
+      <li><a href="#course-description">About</a></li>
+      <li><a href="#teachers">Instructors</a></li>
+      <li><a href="#schedule">Schedule</a></li>
+      <li><a href="#modules">Modules</a></li>
+      <li><a href="#resources">Resources</a></li>
+      <li><a href="#weekly-schedule">Calendar</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section id="course-description">
+  <h2>Course Description</h2>
+  <p>This course will provide foundational knowledge on intelligent systems and their high-level control, aimed at developing robots with embodied intelligence able to learn and interact with their environment. Lectures focus on machine learning solutions for autonomous systems, especially Reinforcement and Imitation Learning techniques.</p>
+</section>
+
+
+<section id="teachers">
+  <h2>Teachers</h2>
+  <div class="teacher-headers-container">
+    <div class="teacher-collapsible">
+      <h3 class="teacher-header">Giuseppe Averta</h3>
+      <div class="teacher-content collapsed">
+        <img src="images/Giuseppe.jpeg" alt="Giuseppe Averta" class="teacher-photo">
+        <p><a href="mailto:giuseppe.averta@polito.it">giuseppe.averta@polito.it</a></p>
+      </div>
+    </div>
+
+    <div class="teacher-collapsible">
+      <h3 class="teacher-header">Francesca Pistilli</h3>
+      <div class="teacher-content collapsed">
+        <img src="images/Francesca.jpg" alt="Francesca Pistilli" class="teacher-photo">
+        <p><a href="mailto:francesca.pistilli@polito.it">francesca.pistilli@polito.it</a></p>
+      </div>
+    </div>
+
+    <div class="teacher-collapsible">
+      <h3 class="teacher-header">Andrea Protopapa</h3>
+      <div class="teacher-content collapsed">
+        <img src="images/Andrea.jpeg" alt="Andrea Protopapa" class="teacher-photo">
+        <p><a href="mailto:andrea.protopapa@polito.it">andrea.protopapa@polito.it</a></p>
+      </div>
+    </div>
+
+    <div class="teacher-collapsible">
+      <h3 class="teacher-header">Davide Buoso</h3>
+      <div class="teacher-content collapsed">
+        <img src="images/davide.jpg" alt="Davide Buoso" class="teacher-photo">
+        <p><a href="mailto:davide.buoso@polito.it">davide.buoso@polito.it</a></p>
+      </div>
+    </div>
+
+
+  </div>
+</section>
+
+
+<section id="schedule">
+  <h2>Weekly Course Schedule</h2>
+  <table class="schedule-table">
+    <thead>
+    <tr>
+      <th>Day</th>
+      <th>Activity</th>
+      <th>Time</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td>Monday</td>
+      <td>Lecture</td>
+      <td>16:00 - 19:00</td>
+    </tr>
+    <tr>
+      <td>Thursday</td>
+      <td>Lecture</td>
+      <td>10:00 - 11:30</td>
+    </tr>
+    <tr class="lab-session">
+      <td>To Be Scheduled</td>
+      <td>Laboratory Session</td>
+      <td>1.5 hours</td>
+    </tr>
+    </tbody>
+  </table>
+</section>
+
+
+<section id="modules">
+  <h2>Course Modules</h2>
+
+  <div class="module-item">
+    <h3 class="module-header"><i class="fa-solid fa-gear"></i> Robotics Survival Kit (approx. 10h)</h3>
+    <div class="module-content collapsed">
+      <ul>
+        <li>Foundations of sensing and actuation</li>
+        <li>Kinematics and dynamics of autonomous systems</li>
+        <li>Motor control</li>
+        <li>Introduction to ROS programming (optional)</li>
+        <li>Gaussian Filters, Kalman Filter, Particle Filter (optional)</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="module-item">
+    <h3 class="module-header"><i class="fa-solid fa-brain"></i> Intro to Reinforcement Learning</h3>
+    <div class="module-content collapsed">
+      <ul>
+        <li>Supervised Learning for Robotics</li>
+        <li>Imitation Learning vs Reinforcement Learning</li>
+        <li>Markov Decision Processes</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="module-item">
+    <h3 class="module-header"><i class="fa-solid fa-chart-simple"></i> Value-based RL</h3>
+    <div class="module-content collapsed">
+      <ul>
+        <li>Planning by Dynamic Programming</li>
+        <li>Model-Free Prediction</li>
+        <li>Model-Free Control</li>
+        <li>Value Function Approximation</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="module-item">
+    <h3 class="module-header"><i class="fa-solid fa-arrow-trend-up"></i> Policy Gradients</h3>
+    <div class="module-content collapsed">
+      <ul>
+        <li>Finite Difference Policy Gradient</li>
+        <li>Monte-Carlo Policy Gradient</li>
+        <li>Actor-Critic approaches</li>
+        <li>Natural gradient</li>
+        <li>Deep policy networks</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="module-item">
+    <h3 class="module-header"><i class="fa-solid fa-network-wired"></i> Model-based RL</h3>
+    <div class="module-content collapsed">
+      <ul>
+        <li>Model-based learning</li>
+        <li>Integrated Architectures</li>
+        <li>Learning and Planning</li>
+        <li>Real and simulated experience</li>
+        <li>Monte-Carlo Tree Search</li>
+        <li>Go use-case</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="module-item">
+    <h3 class="module-header"><i class="fa-solid fa-dice"></i> Bandits, Exploration/Exploitation</h3>
+    <div class="module-content collapsed">
+      <ul>
+        <li>Intro to bandits</li>
+        <li>Simple naïve exploration (𝜖-greedy)</li>
+        <li>Optimistic approaches</li>
+        <li>Probability matching & Information Value</li>
+        <li>Multi-armed Bandits</li>
+        <li>Contextual Bandits</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="module-item">
+    <h3 class="module-header"><i class="fa-solid fa-chalkboard-teacher"></i> Supervised RL</h3>
+    <div class="module-content collapsed">
+      <ul>
+        <li>Behavior cloning</li>
+        <li>Imitation Learning</li>
+        <li>Generative IL</li>
+        <li>Inverse RL</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="module-item">
+    <h3 class="module-header"><i class="fa-solid fa-robot"></i> Advanced topics</h3>
+    <div class="module-content collapsed">
+      <ul>
+        <li>Sim-to-Real Transfer</li>
+        <li>Vision and Graph-Based RL</li>
+        <li>Vision-Language-Action Models</li>
+        <li>Journal Clubs on relevant research papers</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="module-item">
+    <h3 class="module-header"><i class="fa-solid fa-flask"></i> Labs (15h)</h3>
+    <div class="module-content collapsed">
+      <ul>
+        <li>Optimal Control</li>
+        <li>Reward Shaping</li>
+        <li>Q-Learning (Value-Based RL)</li>
+        <li>Reinforce, PPO, SAC (Policy Gradients)</li>
+        <li>Sim-to-Real Policy Transfer</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="resources">
+  <h2>Resources & Textbooks</h2>
+  <div class="resources-container">
+    <a href="https://web.stanford.edu/class/psych209/Readings/SuttonBartoIPRLBook2ndEd.pdf" target="_blank" class="resource-card">
+      <i class="fa-solid fa-book-open"></i>
+      <div>
+        <h3>Reinforcement Learning: An Introduction</h3>
+        <p>Sutton & Barto (Classic RL textbook)</p>
+      </div>
+    </a>
+    <a href="https://www.springer.com/gp/book/9781846286414" target="_blank" class="resource-card">
+      <i class="fa-solid fa-robot"></i>
+      <div>
+        <h3>Robotics Modelling, Planning and Control</h3>
+        <p>Siciliano et al. (Robotics fundamentals)</p>
+      </div>
+    </a>
+    <a href="https://docs.ufpr.br/~danielsantos/ProbabilisticRobotics.pdf" target="_blank" class="resource-card">
+      <i class="fa-solid fa-atom"></i>
+      <div>
+        <h3>Probabilistic Robotics</h3>
+        <p>Thrun et al. (Uncertainty in Robotics)</p>
+      </div>
+    </a>
+    <a href="https://spinningup.openai.com/en/latest/" target="_blank" class="resource-card">
+      <i class="fa-solid fa-rocket"></i>
+      <div>
+        <h3>OpenAI Spinning Up</h3>
+        <p>RL Educational Resource</p>
+      </div>
+    </a>
+    <a href="http://www0.cs.ucl.ac.uk/staff/d.silver/web/Teaching.html" target="_blank" class="resource-card">
+      <i class="fa-solid fa-chalkboard"></i>
+      <div>
+        <h3>David Silver’s RL Course</h3>
+        <p>DeepMind lectures and notes</p>
+      </div>
+    </a>
+    <a href="https://sites.google.com/view/deep-rl-bootcamp/" target="_blank" class="resource-card">
+      <i class="fa-solid fa-graduation-cap"></i>
+      <div>
+        <h3>Berkeley Deep RL Bootcamp</h3>
+        <p>Full course material and videos</p>
+      </div>
+    </a>
+    <a href="https://github.com/berkeleydeeprlcourse/homework" target="_blank" class="resource-card">
+      <i class="fa-solid fa-box-open"></i>
+      <div>
+        <h3>Berkeley Deep RL Bootcamp Resources</h3>
+        <p>GitHub Homework & Examples</p>
+      </div>
+    </a>
+    <a href="https://github.com/google/dopamine" target="_blank" class="resource-card">
+      <i class="fa-solid fa-robot"></i>
+      <div>
+        <h3>Dopamine</h3>
+        <p>Google Research RL Framework</p>
+      </div>
+    </a>
+    <a href="https://arxiv.org/search/cs?searchtype=author&query=Silver%2C+D" target="_blank" class="resource-card">
+      <i class="fa-solid fa-file-pdf"></i>
+      <div>
+        <h3>David Silver RL Papers</h3>
+        <p>Research papers on arXiv</p>
+      </div>
+    </a>
+    <a href="https://gymnasium.farama.org/" target="_blank" class="resource-card">
+      <i class="fa-solid fa-vials"></i>
+      <div>
+        <h3>Gymnasium</h3>
+        <p>RL Environments collection</p>
+      </div>
+    </a>
+    <a href="https://pytorch.org/" target="_blank" class="resource-card">
+      <i class="fa-brands fa-python"></i>
+      <div>
+        <h3>PyTorch</h3>
+        <p>Deep Learning Framework</p>
+      </div>
+    </a>
+    <a href="https://stable-baselines3.readthedocs.io/en/master/" target="_blank" class="resource-card">
+      <i class="fa-solid fa-play"></i>
+      <div>
+        <h3>Stable Baselines3</h3>
+        <p>RL Algorithms in PyTorch</p>
+      </div>
+    </a>
+  </div>
+</section>
+
+<section id="weekly-schedule">
+  <h2>Weekly Lecture Schedule & Materials</h2>
+  <table class="schedule-table">
+    <thead>
+    <tr>
+      <th>Week</th>
+      <th>Day</th>
+      <th>Time</th>
+      <th>Topic Covered</th>
+      <th>Slides</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="week-1">
+      <td>1</td>
+      <td>Monday</td>
+      <td>16:00 - 19:00</td>
+      <td>Introduction to Robotics</td>
+      <td><a href="slides/week1.pdf" target="_blank">View Slides</a></td>
+    </tr>
+    <tr class="week-1">
+      <td>1</td>
+      <td>Thursday</td>
+      <td>10:30 - 12:00</td>
+      <td>Foundations of Sensing & Actuation</td>
+      <td><a href="slides/week1_thu.pdf" target="_blank">View Slides</a></td>
+    </tr>
+    <tr class="week-2">
+      <td>2</td>
+      <td>Monday</td>
+      <td>16:00 - 19:00</td>
+      <td>TBA</td>
+      <td><a href="slides/week2.pdf" target="_blank">View Slides</a></td>
+    </tr>
+    </trRobot
+    <tr class="week-2">
+      <td>2</td>
+      <td>Thursday</td>
+      <td>10:30 - 12:00</td>
+      <td>TBA</td>
+      <td><a href="slides/week1_thu.pdf" target="_blank">View Slides</a></td>
+    </tr>
+    <tr class="week-3">
+      <td>3</td>
+      <td>Monday</td>
+      <td>16:00 - 19:00</td>
+      <td>TBA</td>
+      <td><a href="slides/week2.pdf" target="_blank">View Slides</a></td>
+    </tr>
+    <tr class="week-3">
+      <td>3</td>
+      <td>Thursday</td>
+      <td>10:30 - 12:00</td>
+      <td>TBA</td>
+      <td><a href="slides/week1_thu.pdf" target="_blank">View Slides</a></td>
+    </tr>
+    <tr class="week-4">
+      <td>4</td>
+      <td>Monday</td>
+      <td>16:00 - 19:00</td>
+      <td>TBA</td>
+      <td><a href="slides/week2.pdf" target="_blank">View Slides</a></td>
+    </tr>
+    <tr class="week-4">
+      <td>4</td>
+      <td>Thursday</td>
+      <td>10:30 - 12:00</td>
+      <td>TBA</td>
+      <td><a href="slides/week1_thu.pdf" target="_blank">View Slides</a></td>
+    </tr>
+    <!-- other weeks follow similarly with class week-3, week-4, ... -->
+    </tbody>
+
+  </table>
+</section>
+
+<footer>
+  <p>&copy; 2025 Robot Learning Course</p>
+</footer>
+<script src="script.js"></script>
+
+</body>
+</html>
