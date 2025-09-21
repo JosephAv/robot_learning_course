@@ -286,6 +286,29 @@ h1, h2, h3 {
     border-radius: 12px;
     overflow: hidden; /* Ensures the corners are rounded correctly */
 }
+
+.schedule-table td a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    background-color: #2563eb;
+    color: white;
+    text-decoration: none;
+    border-radius: 50%; /* This makes the button a circle */
+    transition: background-color 0.2s ease-in-out, transform 0.2s ease;
+}
+
+.schedule-table td a:hover {
+    background-color: #1e40af;
+    transform: scale(1.1); /* Adds a nice pop effect on hover */
+}
+
+/* Style the icon inside the link */
+.schedule-table td a i {
+    font-size: 16px;
+}
 /* === CORRECTED TABLE STYLES END === */
 
 .schedule-table thead tr {
@@ -299,6 +322,7 @@ h1, h2, h3 {
     padding: 0.75rem 1rem;
     border-bottom: 1px solid #e5e7eb;
     word-break: break-word;
+    text-align: center;
 }
 
 .schedule-table tbody tr:hover {
