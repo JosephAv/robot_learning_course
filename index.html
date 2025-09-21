@@ -19,7 +19,11 @@
       <p class="subheading">Politecnico di Torino</p>
     </div>
   </div>
-  <nav>
+  <!-- Toggle button for mobile -->
+  <button class="nav-toggle" aria-label="Toggle menu">
+    <i class="fa-solid fa-bars"></i>
+  </button>
+  <nav class="nav-menu">
     <ul>
       <li><a href="#course-description">About</a></li>
       <li><a href="#teachers">Instructors</a></li>
@@ -30,6 +34,7 @@
     </ul>
   </nav>
 </header>
+
 
 <section id="course-description">
   <h2>Course Description</h2>
@@ -91,32 +96,35 @@
 
 <section id="schedule">
   <h2>Weekly Course Schedule</h2>
-  <table class="schedule-table">
-    <thead>
-    <tr>
-      <th>Day</th>
-      <th>Activity</th>
-      <th>Time</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr>
-      <td>Monday</td>
-      <td>Lecture</td>
-      <td>16:00 - 19:00</td>
-    </tr>
-    <tr>
-      <td>Thursday</td>
-      <td>Lecture</td>
-      <td>10:00 - 11:30</td>
-    </tr>
-    <tr class="lab-session">
-      <td>To Be Scheduled</td>
-      <td>Laboratory Session</td>
-      <td>1.5 hours</td>
-    </tr>
-    </tbody>
-  </table>
+
+  <div class="table-container">
+    <table class="schedule-table">
+      <thead>
+      <tr>
+        <th>Day</th>
+        <th>Activity</th>
+        <th>Time</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>Monday</td>
+        <td>Lecture</td>
+        <td>16:00 - 19:00</td>
+      </tr>
+      <tr>
+        <td>Thursday</td>
+        <td>Lecture</td>
+        <td>10:00 - 11:30</td>
+      </tr>
+      <tr class="lab-session">
+        <td>To Be Scheduled</td>
+        <td>Laboratory Session</td>
+        <td>1.5 hours</td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
 </section>
 
 
@@ -330,85 +338,87 @@
 
 <section id="weekly-schedule">
   <h2>Weekly Lecture Schedule & Materials</h2>
-  <table class="schedule-table">
-    <thead>
-    <tr>
-      <th>Week</th>
-      <th>Day</th>
-      <th>Time</th>
-      <th>Topic Covered</th>
-      <th>Slides</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="week-1">
-      <td>1</td>
-      <td>Monday</td>
-      <td>16:00 - 17:30</td>
-      <td>L0: Intro to Robot Learning Course</td>
-      <td><a href="https://file.didattica.polito.it/dl/MATDID/33960309" target="_blank">View Slides</a></td>
-    </tr>
-    <tr class="week-1">
-      <td>1</td>
-      <td>Monday</td>
-      <td>17:30 - 19:00</td>
-      <td>L1: Foundations of sensing & actuation -- pt.1</td>
-      <td><a href="https://file.didattica.polito.it/dl/MATDID/33960310" target="_blank">View Slides</a></td>
-    </tr>
-    <tr class="week-1">
-      <td>1</td>
-      <td>Thursday</td>
-      <td>10:30 - 12:00</td>
-      <td>L1: Foundations of sensing & actuation -- pt.2</td>
-      <td><a href="https://file.didattica.polito.it/dl/MATDID/33960310" target="_blank">View Slides</a></td>
-    </tr>
-    <tr class="week-2">
-      <td>2</td>
-      <td>Monday</td>
-      <td>16:00 - 19:00</td>
-      <td>TBA</td>
-      <td><a href="slides/week2.pdf" target="_blank">View Slides</a></td>
-    </tr>
-    </trRobot
-    <tr class="week-2">
-      <td>2</td>
-      <td>Thursday</td>
-      <td>10:30 - 12:00</td>
-      <td>TBA</td>
-      <td><a href="slides/week1_thu.pdf" target="_blank">View Slides</a></td>
-    </tr>
-    <tr class="week-3">
-      <td>3</td>
-      <td>Monday</td>
-      <td>16:00 - 19:00</td>
-      <td>TBA</td>
-      <td><a href="slides/week2.pdf" target="_blank">View Slides</a></td>
-    </tr>
-    <tr class="week-3">
-      <td>3</td>
-      <td>Thursday</td>
-      <td>10:30 - 12:00</td>
-      <td>TBA</td>
-      <td><a href="slides/week1_thu.pdf" target="_blank">View Slides</a></td>
-    </tr>
-    <tr class="week-4">
-      <td>4</td>
-      <td>Monday</td>
-      <td>16:00 - 19:00</td>
-      <td>TBA</td>
-      <td><a href="slides/week2.pdf" target="_blank">View Slides</a></td>
-    </tr>
-    <tr class="week-4">
-      <td>4</td>
-      <td>Thursday</td>
-      <td>10:30 - 12:00</td>
-      <td>TBA</td>
-      <td><a href="slides/week1_thu.pdf" target="_blank">View Slides</a></td>
-    </tr>
-    <!-- other weeks follow similarly with class week-3, week-4, ... -->
-    </tbody>
+  <div class="table-container">
+    <table class="schedule-table">
+      <thead>
+      <tr>
+        <th>Week</th>
+        <th>Day</th>
+        <th>Time</th>
+        <th>Topic Covered</th>
+        <th>Slides</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr class="week-1">
+        <td>1</td>
+        <td>Monday</td>
+        <td>16:00 - 17:30</td>
+        <td>L0: Intro to Robot Learning Course</td>
+        <td><a href="https://file.didattica.polito.it/dl/MATDID/33960309" target="_blank">View Slides</a></td>
+      </tr>
+      <tr class="week-1">
+        <td>1</td>
+        <td>Monday</td>
+        <td>17:30 - 19:00</td>
+        <td>L1: Foundations of sensing & actuation -- pt.1</td>
+        <td><a href="https://file.didattica.polito.it/dl/MATDID/33960310" target="_blank">View Slides</a></td>
+      </tr>
+      <tr class="week-1">
+        <td>1</td>
+        <td>Thursday</td>
+        <td>10:30 - 12:00</td>
+        <td>L1: Foundations of sensing & actuation -- pt.2</td>
+        <td><a href="https://file.didattica.polito.it/dl/MATDID/33960310" target="_blank">View Slides</a></td>
+      </tr>
+      <tr class="week-2">
+        <td>2</td>
+        <td>Monday</td>
+        <td>16:00 - 19:00</td>
+        <td>TBA</td>
+        <td><a href="slides/week2.pdf" target="_blank">View Slides</a></td>
+      </tr>
+      </trRobot
+      <tr class="week-2">
+        <td>2</td>
+        <td>Thursday</td>
+        <td>10:30 - 12:00</td>
+        <td>TBA</td>
+        <td><a href="slides/week1_thu.pdf" target="_blank">View Slides</a></td>
+      </tr>
+      <tr class="week-3">
+        <td>3</td>
+        <td>Monday</td>
+        <td>16:00 - 19:00</td>
+        <td>TBA</td>
+        <td><a href="slides/week2.pdf" target="_blank">View Slides</a></td>
+      </tr>
+      <tr class="week-3">
+        <td>3</td>
+        <td>Thursday</td>
+        <td>10:30 - 12:00</td>
+        <td>TBA</td>
+        <td><a href="slides/week1_thu.pdf" target="_blank">View Slides</a></td>
+      </tr>
+      <tr class="week-4">
+        <td>4</td>
+        <td>Monday</td>
+        <td>16:00 - 19:00</td>
+        <td>TBA</td>
+        <td><a href="slides/week2.pdf" target="_blank">View Slides</a></td>
+      </tr>
+      <tr class="week-4">
+        <td>4</td>
+        <td>Thursday</td>
+        <td>10:30 - 12:00</td>
+        <td>TBA</td>
+        <td><a href="slides/week1_thu.pdf" target="_blank">View Slides</a></td>
+      </tr>
+      <!-- other weeks follow similarly with class week-3, week-4, ... -->
+      </tbody>
 
-  </table>
+    </table>
+  </div>
 </section>
 
 <footer>
