@@ -322,7 +322,7 @@ h1, h2, h3 {
     padding: 0.75rem 1rem;
     border-bottom: 1px solid #e5e7eb;
     word-break: break-word;
-    text-align: center;
+    text-align: left;
 }
 
 .schedule-table tbody tr:hover {
@@ -350,16 +350,16 @@ h1, h2, h3 {
 .schedule-table tbody tr.week-2,
 .schedule-table tbody tr.week-4,
 .schedule-table tbody tr.week-6 {
-    background-color: #ffffff;
+background-color: #ffffff;
 }
 
 .schedule-table tbody tr:hover {
-    background-color: #c3dafe;
+background-color: #c3dafe;
 }
 
 .schedule-table tbody tr.week-separator {
-    border-top: 3px solid #2563eb;
-    background-color: #f0f7ff;
+border-top: 3px solid #2563eb;
+background-color: #f0f7ff;
 }
 
 .schedule-table td:first-child {
