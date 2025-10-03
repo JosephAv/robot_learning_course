@@ -330,9 +330,9 @@ h1, h2, h3 {
 }
 
 .schedule-table tbody tr.lab-session td {
-    background: #e0e7ff;
+    background: #f0f9ff;
     font-weight: 600;
-    color: #4338ca;
+    color: #4bca38;
     text-align: left;
 }
 
