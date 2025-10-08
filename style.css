@@ -343,13 +343,21 @@ h1, h2, h3 {
 
 .schedule-table tbody tr.week-1,
 .schedule-table tbody tr.week-3,
-.schedule-table tbody tr.week-5 {
+.schedule-table tbody tr.week-5,
+.schedule-table tbody tr.week-7,
+.schedule-table tbody tr.week-9,
+.schedule-table tbody tr.week-11,
+.schedule-table tbody tr.week-13{
     background-color: #e0e7ff;
 }
 
 .schedule-table tbody tr.week-2,
 .schedule-table tbody tr.week-4,
-.schedule-table tbody tr.week-6 {
+.schedule-table tbody tr.week-6,
+.schedule-table tbody tr.week-8,
+.schedule-table tbody tr.week-10,
+.schedule-table tbody tr.week-12,
+.schedule-table tbody tr.week-14 {
 background-color: #ffffff;
 }
 
