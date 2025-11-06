@@ -309,6 +309,15 @@ h1, h2, h3 {
 .schedule-table td a i {
     font-size: 16px;
 }
+
+/* Make the Topic Covered column more compact */
+.schedule-table td:nth-child(4) {
+    max-width: 450px;  /* Adjust this value as needed */
+    overflow: scroll;
+    text-overflow: inherit;
+    white-space: nowrap;
+}
+
 /* === CORRECTED TABLE STYLES END === */
 
 .schedule-table thead tr {
