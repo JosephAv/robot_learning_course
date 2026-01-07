@@ -356,7 +356,8 @@ h1, h2, h3 {
 .schedule-table tbody tr.week-7,
 .schedule-table tbody tr.week-9,
 .schedule-table tbody tr.week-11,
-.schedule-table tbody tr.week-13{
+.schedule-table tbody tr.week-13,
+.schedule-table tbody tr.week-15{
     background-color: #e0e7ff;
 }
 
