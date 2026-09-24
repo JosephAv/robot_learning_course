@@ -170,6 +170,27 @@ tr.table-lab td {
   color: var(--accent-blue);
 }
 
+/* Weekly schedule: tint alternating weeks so each week is easy to tell apart */
+#weekly-schedule tbody tr.week-1,
+#weekly-schedule tbody tr.week-3,
+#weekly-schedule tbody tr.week-5,
+#weekly-schedule tbody tr.week-7,
+#weekly-schedule tbody tr.week-9,
+#weekly-schedule tbody tr.week-11,
+#weekly-schedule tbody tr.week-13 {
+  --bs-table-bg: #ffffff;
+}
+
+#weekly-schedule tbody tr.week-2,
+#weekly-schedule tbody tr.week-4,
+#weekly-schedule tbody tr.week-6,
+#weekly-schedule tbody tr.week-8,
+#weekly-schedule tbody tr.week-10,
+#weekly-schedule tbody tr.week-12,
+#weekly-schedule tbody tr.week-14 {
+  --bs-table-bg: #e6edff;
+}
+
 /* Resources */
 
 .resource-card {
