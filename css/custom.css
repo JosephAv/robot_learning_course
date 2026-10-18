@@ -191,6 +191,13 @@ tr.table-lab td {
   --bs-table-bg: #e6edff;
 }
 
+/* Center the Week column. Rows that continue a rowspan have no Week cell,
+   so only target the first cell of full 6-cell rows. */
+#weekly-schedule thead th:first-child,
+#weekly-schedule tbody td:first-child:nth-last-child(6) {
+  text-align: center;
+}
+
 /* Resources */
 
 .resource-card {
