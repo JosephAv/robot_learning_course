@@ -177,7 +177,8 @@ tr.table-lab td {
 #weekly-schedule tbody tr.week-7,
 #weekly-schedule tbody tr.week-9,
 #weekly-schedule tbody tr.week-11,
-#weekly-schedule tbody tr.week-13 {
+#weekly-schedule tbody tr.week-13,
+#weekly-schedule tbody tr.week-15 {
   --bs-table-bg: #ffffff;
 }
 
@@ -196,6 +197,48 @@ tr.table-lab td {
 #weekly-schedule thead th:first-child,
 #weekly-schedule tbody td:first-child:nth-last-child(6) {
   text-align: center;
+}
+
+/* Current week, set by highlightCurrentWeek() in js/scripts.js */
+#weekly-schedule tbody tr.current-week {
+  --bs-table-bg: #fff3cd;
+}
+
+#weekly-schedule tbody tr#current-week > td:first-child {
+  box-shadow: inset 4px 0 0 #f0ad00;
+}
+
+#current-week {
+  scroll-margin-top: 6rem;
+}
+
+.current-week-badge {
+  display: block;
+  width: max-content;
+  margin: 0.35rem auto 0;
+  padding: 0.1rem 0.45rem;
+  border-radius: 1rem;
+  background: #f0ad00;
+  color: #1f1f1f;
+  font-size: 0.7rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+/* Journal clubs: required readings, then smaller muted follow-up readings */
+.jc-papers {
+  min-width: 18rem;
+  font-size: 0.875rem;
+}
+
+.jc-papers ul {
+  padding-left: 1.1rem;
+  margin-bottom: 0.4rem;
+}
+
+.jc-papers .jc-followup {
+  color: #6c757d;
+  font-size: 0.8rem;
 }
 
 /* Resources */

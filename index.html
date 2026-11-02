@@ -35,7 +35,7 @@
   <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
   <!-- Core theme CSS (includes Bootstrap)-->
   <link href="css/styles.css" rel="stylesheet">
-  <link href="css/custom.css" rel="stylesheet">
+  <link href="css/custom.css?v=20261102" rel="stylesheet">
 
   <!-- Structured Data for Google -->
   <script type="application/ld+json">
@@ -215,9 +215,9 @@
               <td>16:00 - 17:30</td>
             </tr>
             <tr class="table-lab">
-              <td>TBD</td>
+              <td>Thursday</td>
               <td><i class="fa-solid fa-flask"></i> Laboratory Session (room TBD)</td>
-              <td>TBD</td>
+              <td>14:00 - 15:00</td>
             </tr>
             </tbody>
           </table>
@@ -383,6 +383,12 @@
                   <li>Reinforce, PPO, SAC (Policy Gradients)</li>
                   <li>Sim-to-Real Policy Transfer</li>
                 </ul>
+                <p class="mb-1"><strong>Lab grading</strong> (4 labs, 6 points max in total). Each lab has a soft and a hard deadline (see the <a href="#weekly-schedule">calendar</a>):</p>
+                <ul class="mb-0">
+                  <li>up to 1.5 points if submitted before the soft deadline;</li>
+                  <li>up to 1.0 point if submitted between the soft and the hard deadline;</li>
+                  <li>0 points if submitted after the hard deadline.</li>
+                </ul>
               </div>
             </div>
           </div>
@@ -533,7 +539,7 @@
 <section class="modules-section bg-light" id="weekly-schedule">
   <div class="container px-4 px-lg-5">
     <h2 class="text-center mb-3">Weekly Lecture Schedule &amp; Materials</h2>
-    <p class="text-center text-muted mb-5">Links for slides will work only if you are logged in with your PoliTo credentials. You can find lecture recordings on the university portal approx. 1 day after the lecture.</p>
+    <p class="text-center text-muted mb-5">Links for slides will work only if you are logged in with your PoliTo credentials. You can find lecture recordings on the university portal approx. 1 day after the lecture.<br>Journal clubs: please read the papers under <strong>Read</strong> before the session; <em>follow-up readings</em> are optional, for those who want to go deeper on their own.</p>
     <div class="table-responsive">
       <table class="table table-bordered bg-white align-middle">
         <thead class="table-dark">
@@ -668,10 +674,313 @@
         </tr>
         <tr class="week-6">
           <td>6</td>
+          <td>Thu 29/10/26</td>
+          <td>14:00 - 15:00</td>
+          <td><i class="fa-solid fa-flask"></i> Lab Session 1: Intro to RL &amp; Gym</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr class="week-6">
+          <td>6</td>
           <td>Fri 30/10/26</td>
           <td>16:00 - 17:30</td>
           <td>L5d: Model-Free Reinforcement Learning – Value Function Approximation - pt2</td>
           <td><a href="https://file.didattica.polito.it/dl/MATDID/34206016" target="_blank" aria-label="View Slides"><i class="fa-solid fa-file-pdf"></i></a></td>
+          <td></td>
+        </tr>
+
+        <tr class="week-7">
+          <td>7</td>
+          <td>Mon 02/11/26</td>
+          <td>16:00 - 19:00</td>
+          <td>L6: Policy-based Reinforcement Learning - pt1</td>
+          <td><a href="https://file.didattica.polito.it/dl/MATDID/34220348" target="_blank" aria-label="View Slides"><i class="fa-solid fa-file-pdf"></i></a></td>
+          <td></td>
+        </tr>
+        <tr class="week-7">
+          <td>7</td>
+          <td>Thu 05/11/26</td>
+          <td>14:00 - 15:00</td>
+          <td><i class="fa-solid fa-flask"></i> Lab Session 2: Q-Learning &amp; REINFORCE from Scratch</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr class="week-7">
+          <td>7</td>
+          <td>Fri 06/11/26</td>
+          <td>16:00 - 17:30</td>
+          <td>L6: Policy-based Reinforcement Learning - pt2</td>
+          <td><a href="https://file.didattica.polito.it/dl/MATDID/34220348" target="_blank" aria-label="View Slides"><i class="fa-solid fa-file-pdf"></i></a></td>
+          <td></td>
+        </tr>
+
+        <tr class="week-8">
+          <td>8</td>
+          <td>Mon 09/11/26</td>
+          <td>16:00 - 19:00</td>
+          <td>L7: Model-based Reinforcement Learning</td>
+          <td><a href="https://file.didattica.polito.it/dl/MATDID/34220346" target="_blank" aria-label="View Slides"><i class="fa-solid fa-file-pdf"></i></a></td>
+          <td></td>
+        </tr>
+        <tr class="week-8">
+          <td>8</td>
+          <td>Thu 12/11/26</td>
+          <td>14:00 - 15:00</td>
+          <td><i class="fa-solid fa-flask"></i> Lab Session 3: PPO &amp; SAC</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr class="week-8">
+          <td>8</td>
+          <td>Fri 13/11/26</td>
+          <td>16:00 - 17:30</td>
+          <td>Journal Club: Value-based, Policy-based &amp; Actor-Critic RL</td>
+          <td></td>
+          <td class="jc-papers">
+            <strong>Read</strong>
+            <ul>
+              <li><a href="https://web.stanford.edu/class/psych209/Readings/MnihEtAlHassibis15NatureControlDeepRL.pdf" target="_blank">Mnih et al., Human-level Control through Deep RL / DQN (2015)</a></li>
+              <li><a href="https://link.springer.com/article/10.1007/BF00992696" target="_blank">Williams, REINFORCE (1992)</a></li>
+              <li><a href="https://arxiv.org/abs/1602.01783" target="_blank">Mnih et al., Asynchronous Advantage Actor-Critic / A3C (2016)</a></li>
+            </ul>
+            <span class="jc-followup">Follow-up readings</span>
+            <ul class="jc-followup">
+              <li><a href="https://arxiv.org/abs/1511.05952" target="_blank">Schaul et al., Prioritized Experience Replay (2015)</a></li>
+              <li><a href="https://papers.nips.cc/paper_files/paper/1999/hash/464d828b85b0bed98e80ade0a5c43b0f-Abstract.html" target="_blank">Sutton et al., Policy Gradient Methods with Function Approximation (1999)</a></li>
+              <li><a href="https://arxiv.org/abs/1502.05477" target="_blank">Schulman et al., TRPO (2015)</a></li>
+              <li><a href="https://arxiv.org/abs/1707.06347" target="_blank">Schulman et al., PPO (2017)</a></li>
+              <li><a href="https://arxiv.org/abs/1801.01290" target="_blank">Haarnoja et al., Soft Actor-Critic / SAC (2018)</a></li>
+              <li><a href="https://arxiv.org/abs/1604.06778" target="_blank">Duan et al., Benchmarking Deep RL for Continuous Control (2016)</a></li>
+              <li><a href="https://arxiv.org/abs/1509.06461" target="_blank">van Hasselt et al., Double DQN (2016)</a></li>
+              <li><a href="https://proceedings.mlr.press/v48/wangf16.pdf" target="_blank">Wang et al., Dueling Network Architectures (2016)</a></li>
+            </ul>
+          </td>
+        </tr>
+
+        <tr class="week-9">
+          <td>9</td>
+          <td>Mon 16/11/26</td>
+          <td>16:00 - 19:00</td>
+          <td>L8: Imitation &amp; Inverse Reinforcement Learning</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr class="week-9">
+          <td>9</td>
+          <td>Thu 19/11/26</td>
+          <td>14:00 - 15:00</td>
+          <td><i class="fa-solid fa-hourglass-end"></i> <strong>Soft deadline: Lab 1, Lab 2</strong></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr class="week-9">
+          <td>9</td>
+          <td>Fri 20/11/26</td>
+          <td>16:00 - 17:30</td>
+          <td>Journal Club: Imitation Learning (foundations)</td>
+          <td></td>
+          <td class="jc-papers">
+            <strong>Read</strong>
+            <ul>
+              <li><a href="https://proceedings.neurips.cc/paper/1988/hash/812b4ba287f5ee0bc9d43bbf5bbe87fb-Abstract.html" target="_blank">Pomerleau, ALVINN: An Autonomous Land Vehicle in a Neural Network (1989)</a></li>
+              <li><a href="https://arxiv.org/abs/1011.0686" target="_blank">Ross et al., DAgger (2011)</a></li>
+              <li><a href="https://arxiv.org/abs/1606.03476" target="_blank">Ho &amp; Ermon, GAIL (2016)</a></li>
+            </ul>
+            <span class="jc-followup">Follow-up readings</span>
+            <ul class="jc-followup">
+              <li><strong><a href="https://arxiv.org/abs/2608.03753" target="_blank">Protopapa et al., GORDON: Graph-based Object-centric Rewards for Long-Horizon Manipulation (2026)</a></strong></li>
+              <li><a href="https://arxiv.org/abs/1604.07316" target="_blank">Bojarski et al., End to End Learning for Self-Driving Cars (2016)</a></li>
+              <li><a href="https://cdn.aaai.org/AAAI/2008/AAAI08-227.pdf" target="_blank">Ziebart et al., Maximum Entropy IRL (2008)</a></li>
+              <li><a href="https://doi.org/10.1145/1015330.1015430" target="_blank">Abbeel &amp; Ng, Apprenticeship Learning via IRL (2004)</a></li>
+              <li><a href="https://arxiv.org/abs/1710.11248" target="_blank">Fu et al., Adversarial IRL / AIRL (2017)</a></li>
+              <li><a href="https://arxiv.org/abs/1805.01954" target="_blank">Torabi et al., Behavioral Cloning from Observation (2018)</a></li>
+              <li><a href="https://arxiv.org/abs/2207.14299" target="_blank">Kumar et al., GraphIRL (2022)</a></li>
+            </ul>
+          </td>
+        </tr>
+
+        <tr class="week-10">
+          <td>10</td>
+          <td>Mon 23/11/26</td>
+          <td>16:00 - 19:00</td>
+          <td>L9: Bandits &amp; Exploration/Exploitation</td>
+          <td><a href="https://file.didattica.polito.it/dl/MATDID/34220347" target="_blank" aria-label="View Slides"><i class="fa-solid fa-file-pdf"></i></a></td>
+          <td></td>
+        </tr>
+        <tr class="week-10">
+          <td>10</td>
+          <td>Thu 26/11/26</td>
+          <td>14:00 - 15:00</td>
+          <td><i class="fa-solid fa-flask"></i> Lab Session 4: Imitation Learning &mdash; <strong>Soft deadline: Lab 3 &middot; Hard deadline: Lab 1</strong></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr class="week-10">
+          <td>10</td>
+          <td>Fri 27/11/26</td>
+          <td>16:00 - 17:30</td>
+          <td>L10: Sim-to-Real Transfer</td>
+          <td><a href="https://file.didattica.polito.it/dl/MATDID/34220350" target="_blank" aria-label="View Slides"><i class="fa-solid fa-file-pdf"></i></a></td>
+          <td></td>
+        </tr>
+
+        <tr class="week-11">
+          <td>11</td>
+          <td>Mon 30/11/26</td>
+          <td>16:00 - 19:00</td>
+          <td>L11: Vision-Language-Action Models (VLAs)</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr class="week-11">
+          <td>11</td>
+          <td>Thu 03/12/26</td>
+          <td>14:00 - 15:00</td>
+          <td><i class="fa-solid fa-flask"></i> Final Project Presentation (Sim-to-Real or Imitation Learning) &mdash; <strong>Hard deadline: Lab 2</strong></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr class="week-11">
+          <td>11</td>
+          <td>Fri 04/12/26</td>
+          <td>16:00 - 17:30</td>
+          <td>Journal Club: Sim-to-Real</td>
+          <td></td>
+          <td class="jc-papers">
+            <strong>Read</strong>
+            <ul>
+              <li><a href="https://arxiv.org/abs/1703.06907" target="_blank">Tobin et al., Domain Randomization (2017)</a></li>
+              <li><a href="https://arxiv.org/abs/1810.05687" target="_blank">Chebotar et al., SimOpt (2019)</a></li>
+              <li><a href="https://arxiv.org/abs/2311.01885" target="_blank">Tiboni et al., DORAEMON (2023)</a></li>
+            </ul>
+            <span class="jc-followup">Follow-up readings</span>
+            <ul class="jc-followup">
+              <li><a href="https://arxiv.org/abs/1710.06537" target="_blank">Peng et al., Dynamics Randomization (2018)</a></li>
+              <li><a href="https://arxiv.org/abs/1910.07113" target="_blank">OpenAI, Solving Rubik's Cube with a Robot Hand / ADR (2019)</a></li>
+              <li><a href="https://arxiv.org/abs/1906.01728" target="_blank">Ramos et al., BayesSim (2019)</a></li>
+              <li><a href="https://arxiv.org/abs/2107.04034" target="_blank">Kumar et al., Rapid Motor Adaptation / RMA (2021)</a></li>
+              <li><a href="https://arxiv.org/abs/2303.04136" target="_blank">Tiboni et al., Domain Randomization for Soft Robots / RF-DROPO (2023)</a></li>
+              <li><a href="https://arxiv.org/abs/2307.14272" target="_blank">Yang et al., Sim-to-Real Deep RL for Tactile Pushing (2023)</a></li>
+            </ul>
+          </td>
+        </tr>
+
+        <tr class="week-12">
+          <td>12</td>
+          <td>Mon 07/12/26</td>
+          <td>16:00 - 19:00</td>
+          <td>L12: World Models</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr class="week-12">
+          <td>12</td>
+          <td>Thu 10/12/26</td>
+          <td>14:00 - 15:00</td>
+          <td><i class="fa-solid fa-hourglass-end"></i> <strong>Soft deadline: Lab 4 &middot; Hard deadline: Lab 3</strong></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr class="week-12">
+          <td>12</td>
+          <td>Fri 11/12/26</td>
+          <td>16:00 - 17:30</td>
+          <td>Journal Club: Imitation Learning (modern methods)</td>
+          <td></td>
+          <td class="jc-papers">
+            <strong>Read</strong>
+            <ul>
+              <li><a href="https://arxiv.org/abs/2304.13705" target="_blank">Zhao et al., ALOHA / ACT (2023)</a></li>
+              <li><a href="https://arxiv.org/abs/2303.04137" target="_blank">Chi et al., Diffusion Policy (2023)</a></li>
+              <li><a href="https://arxiv.org/abs/2409.00588" target="_blank">Ren et al., Diffusion Policy Policy Optimization / DPPO (2024)</a></li>
+            </ul>
+            <span class="jc-followup">Follow-up readings</span>
+            <ul class="jc-followup">
+              <li><strong><a href="https://arxiv.org/abs/2605.15836" target="_blank">Buoso et al., GAP: Geometric Anchor Pre-training for Data-Efficient Visuomotor Learning (2026)</a></strong></li>
+              <li><a href="https://arxiv.org/abs/2401.02117" target="_blank">Fu et al., Mobile ALOHA (2024)</a></li>
+              <li><a href="https://arxiv.org/abs/2402.10329" target="_blank">Chi et al., Universal Manipulation Interface / UMI (2024)</a></li>
+              <li><a href="https://arxiv.org/abs/2410.18647" target="_blank">Lin et al., Data Scaling Laws in Imitation Learning (2024)</a></li>
+              <li><a href="https://arxiv.org/abs/2411.12633" target="_blank">Vosylius &amp; Johns, Instant Policy (2024)</a></li>
+              <li><a href="https://arxiv.org/abs/2403.00929" target="_blank">Gao et al., PRIME (2024)</a></li>
+              <li><a href="https://arxiv.org/abs/2410.18065" target="_blank">Zhou et al., SPIRE (2024)</a></li>
+            </ul>
+          </td>
+        </tr>
+
+        <tr class="week-13">
+          <td>13</td>
+          <td>Mon 14/12/26</td>
+          <td>16:00 - 19:00</td>
+          <td>Journal Club: Imitation Learning &amp; VLAs</td>
+          <td></td>
+          <td class="jc-papers">
+            <strong>Read</strong>
+            <ul>
+              <li><a href="https://arxiv.org/abs/2212.06817" target="_blank">Brohan et al., RT-1 (2022)</a></li>
+              <li><a href="https://arxiv.org/abs/2307.15818" target="_blank">Brohan et al., RT-2 (2023)</a></li>
+              <li><a href="https://arxiv.org/abs/2406.09246" target="_blank">Kim et al., OpenVLA (2024)</a></li>
+              <li><a href="https://arxiv.org/abs/2410.24164" target="_blank">Black et al., &pi;<sub>0</sub> (2024)</a></li>
+            </ul>
+            <span class="jc-followup">Follow-up readings</span>
+            <ul class="jc-followup">
+              <li><a href="https://arxiv.org/abs/2310.08864" target="_blank">Open X-Embodiment (2023)</a></li>
+              <li><a href="https://arxiv.org/abs/2405.12213" target="_blank">Octo (2024)</a></li>
+              <li><a href="https://arxiv.org/abs/2501.09747" target="_blank">Pertsch et al., FAST Action Tokenization (2025)</a></li>
+              <li><a href="https://arxiv.org/abs/2503.14734" target="_blank">NVIDIA, GR00T N1 (2025)</a></li>
+              <li><a href="https://arxiv.org/abs/2503.20020" target="_blank">Gemini Robotics Team, Gemini Robotics (2025)</a></li>
+              <li><a href="https://arxiv.org/abs/2504.16054" target="_blank">&pi;<sub>0.5</sub> (2025)</a></li>
+              <li><a href="https://arxiv.org/abs/2506.01844" target="_blank">SmolVLA (2025)</a></li>
+              <li><a href="https://arxiv.org/abs/2604.15483" target="_blank">&pi;<sub>0.7</sub> (2026)</a></li>
+            </ul>
+          </td>
+        </tr>
+        <tr class="week-13">
+          <td>13</td>
+          <td>Fri 18/12/26</td>
+          <td>16:00 - 17:30</td>
+          <td>L13: Final Lecture &amp; Thesis Proposals</td>
+          <td></td>
+          <td></td>
+        </tr>
+
+        <tr class="week-14">
+          <td>14</td>
+          <td>Mon 21/12/26</td>
+          <td>16:00 - 19:00</td>
+          <td>Journal Club: World Models</td>
+          <td></td>
+          <td class="jc-papers">
+            <strong>Read</strong>
+            <ul>
+              <li><a href="https://arxiv.org/abs/1803.10122" target="_blank">Ha &amp; Schmidhuber, World Models (2018)</a></li>
+              <li><a href="https://arxiv.org/abs/2206.14176" target="_blank">Wu et al., DayDreamer (2022)</a></li>
+              <li><a href="https://arxiv.org/abs/2402.15391" target="_blank">Bruce et al., Genie (2024)</a></li>
+              <li><a href="https://arxiv.org/abs/2506.09985" target="_blank">Assran et al., V-JEPA 2 (2025)</a></li>
+            </ul>
+            <span class="jc-followup">Follow-up readings</span>
+            <ul class="jc-followup">
+              <li><a href="https://arxiv.org/abs/1912.01603" target="_blank">Hafner et al., Dreamer (2019)</a></li>
+              <li><a href="https://arxiv.org/abs/2301.04104" target="_blank">Hafner et al., DreamerV3 (2023)</a></li>
+              <li><a href="https://arxiv.org/abs/2310.06114" target="_blank">Yang et al., UniSim (2023)</a></li>
+              <li><a href="https://arxiv.org/abs/2408.14837" target="_blank">Valevski et al., GameNGen (2024)</a></li>
+              <li><a href="https://arxiv.org/abs/2501.03575" target="_blank">NVIDIA, Cosmos World Foundation Models (2025)</a></li>
+            </ul>
+          </td>
+        </tr>
+        <tr class="week-14">
+          <td>14</td>
+          <td>Thu 24/12/26</td>
+          <td>14:00 - 15:00</td>
+          <td><i class="fa-solid fa-hourglass-end"></i> <strong>Hard deadline: Lab 4</strong> (no class)</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr class="week-14">
+          <td>14</td>
+          <td>Fri 25/12/26</td>
+          <td>16:00 - 17:30</td>
+          <td>Winter break</td>
+          <td></td>
           <td></td>
         </tr>
 
@@ -698,7 +1007,7 @@
 <!-- Bootstrap core JS-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 <!-- Core theme JS-->
-<script src="js/scripts.js"></script>
+<script src="js/scripts.js?v=20261102"></script>
 
 </body>
 </html>
