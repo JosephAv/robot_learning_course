@@ -241,6 +241,15 @@ tr.table-lab td {
   font-size: 0.8rem;
 }
 
+.jc-papers .jc-note {
+  display: block;
+  color: #6c757d;
+  font-size: 0.8rem;
+  font-style: italic;
+  max-width: 24rem;
+  margin: 0.15rem 0 0.3rem;
+}
+
 /* Resources */
 
 .resource-card {
