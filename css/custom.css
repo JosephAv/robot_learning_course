@@ -309,3 +309,52 @@ tr.table-lab td {
 footer.bg-black {
   background: #1f3a75 !important;
 }
+
+/* Softer light sections: replace pure white with a muted blue-grey palette
+   that matches the site's blue/green gradients and is easier on the eyes. */
+:root {
+  --soft-bg: #e4e9f1;        /* section background */
+  --soft-surface: #f1f4f9;   /* cards, tables, accordion bodies */
+  --soft-surface-alt: #dde5f4; /* alternating week rows, open accordion header */
+  --soft-text: #2b3340;      /* body text: dark slate instead of near-black */
+}
+
+body {
+  color: var(--soft-text);
+}
+
+.bg-light {
+  background-color: var(--soft-bg) !important;
+}
+
+.bg-light .card,
+.bg-white {
+  background-color: var(--soft-surface) !important;
+}
+
+.accordion {
+  --bs-accordion-bg: var(--soft-surface);
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: var(--soft-surface-alt);
+}
+
+#weekly-schedule tbody tr[class*="week-"] {
+  --bs-table-bg: var(--soft-surface);
+}
+
+#weekly-schedule tbody tr.week-2,
+#weekly-schedule tbody tr.week-4,
+#weekly-schedule tbody tr.week-6,
+#weekly-schedule tbody tr.week-8,
+#weekly-schedule tbody tr.week-10,
+#weekly-schedule tbody tr.week-12,
+#weekly-schedule tbody tr.week-14 {
+  --bs-table-bg: var(--soft-surface-alt);
+}
+
+/* keep the current-week highlight on top of the new row colours */
+#weekly-schedule tbody tr.current-week {
+  --bs-table-bg: #fbecc0;
+}
